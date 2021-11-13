@@ -4,28 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GIT</title>
-    <link rel="shortcut icon" href="./gwindows_logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <title>Delivery Food</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Система контроля версий GIT</h1>
-    </header>
-    <section>
-        <h2>Список команд для GIT</h2>
-        <ul>
-            <li>git init - подключает GIT к рабочей папке</li>
-            <li>git pull - работает как комбинация команд git fetch и git merge, т.е. Git вначале забирает изменения из указанного удалённого репозитория, а затем пытается слить их с текущей веткой.</li>
-            <li>git branch - это своего рода “менеджер веток”. Она умеет перечислять ваши ветки, создавать новые, удалять и переименовывать их.</li>
-            <li>git chekout - используется для переключения веток и выгрузки их содержимого в рабочую директорию</li>
-            <li>git merge - используется для слияния одной или нескольких веток в текущую.</li>
-            <li>git fetch -  связывается с удалённым репозиторием и забирает из него все изменения, которых у вас пока нет и сохраняет их локально.</li>
-            <li>git push - используется для установления связи с удалённым репозиторием, вычисления локальных изменений отсутствующих в нём, и собственно их передачи в вышеупомянутый репозиторий</li>
-            <li>git add добавляет содержимое рабочей директории в индекс (staging area) для последующего коммита</li>
-            <li>git commit - создает точку сохранения и сообщение к ней</li>
-            <li>git status -  посмотреть статусы</li>
-        </ul>
-    </section>
+    
+<header class="header">
+
+    <div class="container block">
+
+        <a href="index.html" class="logo-link">
+            <img src="./img/logo.svg" alt="Логотип" class="logo-img">
+        </a>
+    
+        <input type="text" class="adress-input" placeholder="Адрес доставки">
+    
+        <div class="buttons">
+            <button class="button button--primary">
+                <img src="./img/user.svg" alt="человек" class="login-img"> 
+                <span class="button-text">Войти</span> 
+            </button>
+            <button class="button button--secondary">
+                <img src="./img/shopping-cart.svg" alt="корзина" class="cart-img"> 
+                <span class="button-text">Корзина</span>
+            </button>
+        </div>
+        <!-- /.buttons -->
+        
+    </div>
+    <!-- /.container block -->
+
+</header>
+<!-- /.header -->
+
 </body>
 </html>
