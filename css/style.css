@@ -24,6 +24,10 @@ body {
 .cards {
     flex-wrap: wrap;
 }
+button img {
+    margin-left: 4px;
+    margin-right: 4px;
+}
 /* ограничение по ширине и выставляет по середине */
 .container {
     max-width: 1200px;
@@ -124,6 +128,12 @@ body {
     align-items: center;
     margin-bottom: 44px;
 }
+.section__header-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+}
 .search-input {
     max-width: 306px;
     height: 34px;
@@ -134,7 +144,9 @@ body {
     width: 100%;
     margin-bottom: 30px;
     background-color: #fff;
-    border-radius: 7px
+    border-radius: 7px;
+    text-decoration: none;
+    color: black;
 }
 .card-main {
     padding: 21px 24px 35px;
@@ -149,7 +161,6 @@ body {
 .cart-title {
     font-family: Roboto;
     font-style: normal;
-    font-weight: bold;
     font-size: 24px;
     line-height: 32px;
 }
@@ -242,4 +253,36 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+/* страница ресторана */
+.restourant__header {
+    max-width: 442px;
+    width: 100%;
+}
+.product-header {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.desc {
+    font-size: 18px;
+    line-height: 21px;
+    color: #8C8C8C;
+    margin-top: 10px;
+}
+.product-desc {
+    max-width: 210px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+.product-price {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;  
+    color: #000000;
 }
