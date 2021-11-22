@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/main.js" defer></script>
 </head>
 <body>
     
@@ -27,7 +28,7 @@
                 <img src="../img/user.svg" alt="человек" class="login-img"> 
                 <span class="button-text">Войти</span> 
             </button>
-            <button class="button button--secondary">
+            <button class="button button--secondary" id="cart">
                 <img src="../img/shopping-cart.svg" alt="корзина" class="cart-img"> 
                 <span class="button-text">Корзина</span>
             </button>
@@ -55,7 +56,7 @@
         <div class="block cards">
             <div class="card">
                 <div class="card-img">
-                    <img src="../img/pizza-plus.png" alt="Картинка заведения">
+                    <img src="../img/roll.png" alt="Картинка заведения">
                 </div>
                 <!-- /.card-img -->
                 <div class="card-main">
@@ -77,7 +78,7 @@
             <!-- /.card -->
             <div class="card">
                 <div class="card-img">
-                    <img src="../img/pizza-plus.png" alt="Картинка заведения">
+                    <img src="../img/roll.png" alt="Картинка заведения">
                 </div>
                 <!-- /.card-img -->
                 <div class="card-main">
@@ -99,7 +100,7 @@
             <!-- /.card -->
             <div class="card">
                 <div class="card-img">
-                    <img src="../img/pizza-plus.png" alt="Картинка заведения">
+                    <img src="../img/roll.png" alt="Картинка заведения">
                 </div>
                 <!-- /.card-img -->
                 <div class="card-main">
@@ -222,6 +223,146 @@
     <!-- /.container block -->
 </footer>
 <!-- /.footer -->
+
+<div class="modal modal--close">
+    <div class="modal-window">
+        <div class="modal-header">
+            <h2 class="modal-title">Корзина</h2>
+            <button class="btn-close"></button>
+        </div>
+        <!-- /.modal-header -->
+        <div class="modal-main">
+            <div class="row">
+                <p class="product-name">Ролл угорь стандарт</p>
+                <div class="row-rigth">
+                    <div class="price-product">
+                        <strong class="price">250</strong>
+                        <span class="rub">₽</span>
+                    </div>
+                    <!-- ./price-product -->
+                    <div class="counter">
+                        <button class="btn-count">-</button>
+                        <span class="count">1</span>
+                        <button class="btn-count">+</button>
+                    </div>
+                    <!-- /.counter -->
+                </div>
+                <!-- /.row-rigth -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <p class="product-name">Ролл угорь стандарт</p>
+                <div class="row-rigth">
+                    <div class="price-product">
+                        <strong class="price">250</strong>
+                        <span class="rub">₽</span>
+                    </div>
+                    <!-- ./price-product -->
+                    <div class="counter">
+                        <button class="btn-count">-</button>
+                        <span class="count">1</span>
+                        <button class="btn-count">+</button>
+                    </div>
+                    <!-- /.counter -->
+                </div>
+                <!-- /.row-rigth -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <p class="product-name">Ролл угорь стандарт</p>
+                <div class="row-rigth">
+                    <div class="price-product">
+                        <strong class="price">250</strong>
+                        <span class="rub">₽</span>
+                    </div>
+                    <!-- ./price-product -->
+                    <div class="counter">
+                        <button class="btn-count">-</button>
+                        <span class="count">1</span>
+                        <button class="btn-count">+</button>
+                    </div>
+                    <!-- /.counter -->
+                </div>
+                <!-- /.row-rigth -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <p class="product-name">Ролл угорь стандарт</p>
+                <div class="row-rigth">
+                    <div class="price-product">
+                        <strong class="price">250</strong>
+                        <span class="rub">₽</span>
+                    </div>
+                    <!-- ./price-product -->
+                    <div class="counter">
+                        <button class="btn-count">-</button>
+                        <span class="count">1</span>
+                        <button class="btn-count">+</button>
+                    </div>
+                    <!-- /.counter -->
+                </div>
+                <!-- /.row-rigth -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <p class="product-name">Ролл угорь стандарт</p>
+                <div class="row-rigth">
+                    <div class="price-product">
+                        <strong class="price">250</strong>
+                        <span class="rub">₽</span>
+                    </div>
+                    <!-- ./price-product -->
+                    <div class="counter">
+                        <button class="btn-count">-</button>
+                        <span class="count">1</span>
+                        <button class="btn-count">+</button>
+                    </div>
+                    <!-- /.counter -->
+                </div>
+                <!-- /.row-rigth -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <p class="product-name">Ролл угорь стандарт</p>
+                <div class="row-rigth">
+                    <div class="price-product">
+                        <strong class="price">250</strong>
+                        <span class="rub">₽</span>
+                    </div>
+                    <!-- ./price-product -->
+                    <div class="counter">
+                        <button class="btn-count">-</button>
+                        <span class="count">1</span>
+                        <button class="btn-count">+</button>
+                    </div>
+                    <!-- /.counter -->
+                </div>
+                <!-- /.row-rigth -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.modal-main -->
+        <div class="modal-footer">
+            <div class="sum">
+                <h3 class="modal-sum">1250</h3>
+                <span class="rub-sum">₽</span>
+            </div>
+            <!-- ./sum -->
+            <div class="buttons">
+                <button class="button button--primary">
+                    <span class="button-text">Оформить заказ</span> 
+                </button>
+                <button class="button button--secondary">
+                    <span class="button-text">Отмена</span>
+                </button>
+            </div>
+            <!-- /.buttons -->
+        </div>
+        <!-- /.modal-footer -->
+    </div>
+    <!-- /.modal-window -->
+</div>
+<!-- /.modal -->
 
 </body>
 </html>
